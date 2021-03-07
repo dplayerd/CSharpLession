@@ -12,7 +12,7 @@ namespace MeasureSpeed2
         /// <param name="second"></param>
         public static void SleepAWhile(int second)
         {
-            int ms = second * 1000;
+            int ms = second * 1000 * 2;
 
             System.Threading.Thread.Sleep(ms);
         }
