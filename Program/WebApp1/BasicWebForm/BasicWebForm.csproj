@@ -7,16 +7,16 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CFFE29B5-BA44-4A51-8CDE-656E955365BD}</ProjectGuid>
+    <ProjectGuid>{BC4F8D96-EC16-45DD-9B81-98F7E39FB357}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebApplication1</RootNamespace>
-    <AssemblyName>WebApplication1</AssemblyName>
+    <RootNamespace>BasicWebForm</RootNamespace>
+    <AssemblyName>BasicWebForm</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44353</IISExpressSSLPort>
+    <IISExpressSSLPort>44323</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -67,106 +67,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CodeInlineMode.aspx" />
+    <Content Include="DrapDownList.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="HtmlPage1.html" />
-    <Content Include="Image.aspx" />
-    <Content Include="images\IMG1.png" />
-    <Content Include="index.aspx" />
-    <Content Include="LinkFrom.aspx" />
-    <Content Include="LInkTo.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="MultiLineTextBox.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
-    <Content Include="WebForm2.aspx" />
-    <Content Include="WebForm3.aspx" />
-    <Content Include="WebForm4.aspx" />
-    <Content Include="WebForm5.aspx" />
-    <Content Include="WebForm6.aspx" />
-    <Content Include="WebForm7.aspx" />
-    <Content Include="WebForm8.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DrapDownList.aspx.cs">
+      <DependentUpon>DrapDownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrapDownList.aspx.designer.cs">
+      <DependentUpon>DrapDownList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Image.aspx.cs">
-      <DependentUpon>Image.aspx</DependentUpon>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Image.aspx.designer.cs">
-      <DependentUpon>Image.aspx</DependentUpon>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="MultiLineTextBox.aspx.cs">
+      <DependentUpon>MultiLineTextBox.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LinkFrom.aspx.cs">
-      <DependentUpon>LinkFrom.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LinkFrom.aspx.designer.cs">
-      <DependentUpon>LinkFrom.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LInkTo.aspx.cs">
-      <DependentUpon>LInkTo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LInkTo.aspx.designer.cs">
-      <DependentUpon>LInkTo.aspx</DependentUpon>
+    <Compile Include="MultiLineTextBox.aspx.designer.cs">
+      <DependentUpon>MultiLineTextBox.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm4.aspx.cs">
-      <DependentUpon>WebForm4.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm4.aspx.designer.cs">
-      <DependentUpon>WebForm4.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm5.aspx.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm5.aspx.designer.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm6.aspx.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm6.aspx.designer.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm7.aspx.cs">
-      <DependentUpon>WebForm7.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm7.aspx.designer.cs">
-      <DependentUpon>WebForm7.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm8.aspx.cs">
-      <DependentUpon>WebForm8.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm8.aspx.designer.cs">
-      <DependentUpon>WebForm8.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -194,9 +126,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>12574</DevelopmentServerPort>
+          <DevelopmentServerPort>14006</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44353/</IISUrl>
+          <IISUrl>https://localhost:44323/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

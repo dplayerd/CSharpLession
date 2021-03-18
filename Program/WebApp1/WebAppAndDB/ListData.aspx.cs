@@ -5,16 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication1
+namespace WebAppAndDB
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class ListData : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            this.GridView1.DataSource = DataBaseExecutor.ReadTestTable1DT();
+            this.GridView1.DataBind();
         }
     }
-
-    
 }
-
-
