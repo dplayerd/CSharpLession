@@ -1,0 +1,16 @@
+﻿div {
+    border: 1px solid red;
+    margin: 1em;
+    padding: 0.5em;
+    background-color: burlywood;
+}
+
+p {
+    margin: 3px;
+    background-color: white;
+}
+
+span {
+    /* display: block; 
+            margin: -15px ;*/
+}

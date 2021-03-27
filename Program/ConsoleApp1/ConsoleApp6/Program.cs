@@ -11,32 +11,13 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("App 6");
+            int[,] arr1 = new int[2, 3];
 
-            int result = MathCore.Add(5, 6);
-            Console.WriteLine("5 + 6 =" + result);
-
-            Console.ReadLine();
-
-
-#if DEBUG
-            Console.WriteLine(1);
-#endif
-
-
-#if RELEASE
-            Console.WriteLine(2);
-#endif
+            foreach (int item in arr1)
+            {
+                Console.WriteLine(item);
+            }
         }
 
-        //private 
-        //protected
-        //internal
-        //public 
-
-        static void GOGOGO()
-        {
-            int result = MathCore.Add(5, 6);
-        }
     }
 }

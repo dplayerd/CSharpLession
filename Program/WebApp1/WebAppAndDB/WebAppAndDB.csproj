@@ -67,15 +67,51 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DataTableToTable.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="GridViewPage.aspx" />
+    <Content Include="GridViewPage1.aspx" />
+    <Content Include="HtmlTable.aspx" />
     <Content Include="ListData.aspx" />
+    <Content Include="RepeaterDetail.aspx" />
+    <Content Include="RepeaterPage.aspx" />
+    <Content Include="RepeaterPage1.aspx" />
+    <Content Include="RepeaterPrerenderEvent.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBaseExecutor.cs" />
+    <Compile Include="DataTableToTable.aspx.cs">
+      <DependentUpon>DataTableToTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataTableToTable.aspx.designer.cs">
+      <DependentUpon>DataTableToTable.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewPage.aspx.cs">
+      <DependentUpon>GridViewPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridViewPage.aspx.designer.cs">
+      <DependentUpon>GridViewPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewPage1.aspx.cs">
+      <DependentUpon>GridViewPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridViewPage1.aspx.designer.cs">
+      <DependentUpon>GridViewPage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlTable.aspx.cs">
+      <DependentUpon>HtmlTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HtmlTable.aspx.designer.cs">
+      <DependentUpon>HtmlTable.aspx</DependentUpon>
     </Compile>
     <Compile Include="ListData.aspx.cs">
       <DependentUpon>ListData.aspx</DependentUpon>
@@ -85,6 +121,34 @@
       <DependentUpon>ListData.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepeaterDetail.aspx.cs">
+      <DependentUpon>RepeaterDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepeaterDetail.aspx.designer.cs">
+      <DependentUpon>RepeaterDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepeaterPage.aspx.cs">
+      <DependentUpon>RepeaterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepeaterPage.aspx.designer.cs">
+      <DependentUpon>RepeaterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepeaterPage1.aspx.cs">
+      <DependentUpon>RepeaterPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepeaterPage1.aspx.designer.cs">
+      <DependentUpon>RepeaterPage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RepeaterPrerenderEvent.aspx.cs">
+      <DependentUpon>RepeaterPrerenderEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepeaterPrerenderEvent.aspx.designer.cs">
+      <DependentUpon>RepeaterPrerenderEvent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

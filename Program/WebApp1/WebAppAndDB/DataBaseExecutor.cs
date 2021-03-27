@@ -91,6 +91,70 @@ namespace WebAppAndDB
             }
         }
 
+        public static DataTable ReadTestTable1OneRow(string id)
+        {
+            string connectionString = "Data Source=localhost\\SQLExpress;Initial Catalog=CSharpLession; Integrated Security=true";
+            string queryString =
+                $@" SELECT * FROM TestTable1
+                    WHERE ID = @id
+                    ORDER BY ID DESC;";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Parameters.AddWithValue("@id", id);
+
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+                    reader.Close();
+
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return null;
+                }
+            }
+        }
+        public static void UpdateTestTable1(string id, string name, string birthday, string numbercol)
+        {
+            //string connectionString =
+            //    "Data Source=localhost\\SQLExpress;Initial Catalog=CSharpLession; Integrated Security=true";
+
+            //string queryString =
+            //    $@" INSERT INTO TestTable1
+            //            (ID, Name, Birthday, NumberCol)
+            //        VALUES
+            //            (@ID, @Name, @Birthday, @NumberCol)";
+
+            //using (SqlConnection connection = new SqlConnection(connectionString))
+            //{
+            //    SqlCommand command = new SqlCommand(queryString, connection);
+            //    command.Parameters.AddWithValue("@ID", id);
+            //    command.Parameters.AddWithValue("@Name", name);
+            //    command.Parameters.AddWithValue("@Birthday", birthday);
+            //    command.Parameters.AddWithValue("@NumberCol", numbercol);
+
+            //    try
+            //    {
+            //        connection.Open();
+            //        int totalChangeRows = command.ExecuteNonQuery();
+            //        Console.WriteLine("Total change " + totalChangeRows + "Rows.");
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Console.WriteLine(ex.Message);
+            //    }
+            //}
+        }
+
+
         public static void InsertTestTable1(string id, string name, string birthday, string numbercol)
         {
             string connectionString =
