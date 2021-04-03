@@ -7,16 +7,16 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{86D003D6-AAE8-4AC0-8DEF-D5950B5F44E0}</ProjectGuid>
+    <ProjectGuid>{6E43048D-E3C3-417B-ADF2-EE1F03476ADB}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LessionSamples</RootNamespace>
-    <AssemblyName>LessionSamples</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>JavaScriptProject</RootNamespace>
+    <AssemblyName>JavaScriptProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44344</IISExpressSSLPort>
+    <IISExpressSSLPort>44398</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -68,117 +68,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="HtmlPage1.html" />
-    <Content Include="Login.aspx" />
-    <Content Include="RequestValues.aspx" />
-    <Content Include="SamplePage.aspx" />
-    <Content Include="SamplePage2.aspx" />
-    <Content Include="StatusItem.aspx" />
-    <Content Include="StatusViewer.aspx" />
-    <Content Include="StatusWriter.aspx" />
-    <Content Include="ucPager.ascx" />
-    <Content Include="UserInfo.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="DataBaseExecutor.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Main.Master.cs">
-      <DependentUpon>Main.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Main.Master.designer.cs">
-      <DependentUpon>Main.Master</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RequestValues.aspx.cs">
-      <DependentUpon>RequestValues.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RequestValues.aspx.designer.cs">
-      <DependentUpon>RequestValues.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SamplePage.aspx.cs">
-      <DependentUpon>SamplePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SamplePage.aspx.designer.cs">
-      <DependentUpon>SamplePage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SamplePage2.aspx.cs">
-      <DependentUpon>SamplePage2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SamplePage2.aspx.designer.cs">
-      <DependentUpon>SamplePage2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-    </Compile>
-    <Compile Include="StatusItem.aspx.cs">
-      <DependentUpon>StatusItem.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StatusItem.aspx.designer.cs">
-      <DependentUpon>StatusItem.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="StatusViewer.aspx.cs">
-      <DependentUpon>StatusViewer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StatusViewer.aspx.designer.cs">
-      <DependentUpon>StatusViewer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="StatusWriter.aspx.cs">
-      <DependentUpon>StatusWriter.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StatusWriter.aspx.designer.cs">
-      <DependentUpon>StatusWriter.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ucPager.ascx.cs">
-      <DependentUpon>ucPager.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ucPager.ascx.designer.cs">
-      <DependentUpon>ucPager.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="UserInfo.aspx.cs">
-      <DependentUpon>UserInfo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserInfo.aspx.designer.cs">
-      <DependentUpon>UserInfo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Utility\DBAccountManager.cs" />
-    <Compile Include="Utility\LoginHelper.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Main.Master" />
     <None Include="packages.config" />
-    <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -203,9 +102,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>6082</DevelopmentServerPort>
+          <DevelopmentServerPort>11366</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44344/</IISUrl>
+          <IISUrl>https://localhost:44398/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
