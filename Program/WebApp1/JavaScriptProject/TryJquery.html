@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> My first JQuery demo </title>
+
+    <script src="/Scripts/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //var func1 = function () {
+            //$("p").toggle('slow');
+            //};
+
+            $("#btn1").click(function () {
+                $("p").show('slow');
+            });
+            $("#btn2").click(function () {
+                $("p").hide('slow');
+            });
+            $("#btn3").click(function () {
+                // 等同 .append($('<p style="background-color:burlywood;">This is new dom</p>'))
+                $("#id1").append('<p style="background-color:burlywood;">This is new dom</p>');
+            });
+            $("#btn4").click(function () {
+                var inp1 = $("input[name=inp1]");
+                var text = inp1.val();
+
+                text = text.toUpperCase();
+                inp1.val(text);
+            });
+
+            // 馬上觸發
+            $("#btn4").click();
+        });
+    </script>
+</head>
+<body>
+    <div id="id1">
+        <p style="background-color:burlywood;">123123</p>
+        <p style="background-color:burlywood;">123123</p>
+        <p style="background-color:burlywood;">123123</p>
+    </div>
+    <input type="text" value="aaa" name="inp1" />
+
+    <button type="button" id="btn1">Show</button>
+    <button type="button" id="btn2">Hide</button>
+    <button type="button" id="btn3">Append Dom</button>
+    <button type="button" id="btn4">TO Upper</button>
+
+</body>
+</html>
