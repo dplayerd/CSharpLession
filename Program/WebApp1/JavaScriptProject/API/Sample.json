@@ -1,0 +1,18 @@
+﻿[
+    {
+        "UserName": "John",
+        "Age": 17,
+        "Sex": "Male"
+    },
+    {
+        "UserName": "Mary",
+        "Age": 17,
+        "Sex": "Female"
+    },
+    {
+        "UserName": "Johnny",
+        "Age": 17,
+        "Sex": "Male"
+    }
+]
+

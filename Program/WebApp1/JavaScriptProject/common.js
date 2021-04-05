@@ -2,7 +2,7 @@
     var domArr =
         document.getElementsByName("inp1");
 
-    if(domArr.length == 0)
+    if (domArr.length == 0)
         return;
 
     var dom = domArr[0];
@@ -16,12 +16,12 @@ function func2() {
     var domArr =
         document.getElementsByName("inp1");
 
-    if(domArr.length == 0)
+    if (domArr.length == 0)
         return;
 
     var dom = domArr[0];
     var val = dom.value;
-    
+
 
     var domArr1 =
         document.getElementsByTagName("div");
@@ -40,12 +40,12 @@ function func3() {
     var domArr =
         document.getElementsByName("inp1");
 
-    if(domArr.length == 0)
+    if (domArr.length == 0)
         return;
 
     var dom = domArr[0];
     var val = dom.value;
-   
+
     var container = document.getElementById("id1");
 
     if (!container)
@@ -96,7 +96,7 @@ function inpKeyUp_KeyUp() {
 
     if (!inp)
         return;
-    
+
     var txt = inp.value;
     txt = txt.toUpperCase();
     inp.value = txt;
